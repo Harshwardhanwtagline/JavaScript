@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr = [2,2,3,4,5,6,7,7,8,8,8,8,9]
+            const new_arr = new Array()
+            for(let i of new Set(arr)){
+                new_arr.push(i)
+            }
+            console.log(new_arr) 
+        }
+    </script>
+</body>
+</html>

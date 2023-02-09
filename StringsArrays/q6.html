@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr= new Array(10, 20, 30, 44, 55)
+            arr.push(33)
+            console.log(arr.shift())
+            arr.unshift(99)
+            arr.push(40, 50 ,60)
+            arr.splice(1,4)
+            console.log(arr[0]+arr[1])
+            const arr_1 = arr.concat([100, 101])
+            let reverse_arr = arr.reverse();
+            console.log(reverse_arr)
+               
+        }
+    </script>
+</body>
+</html>

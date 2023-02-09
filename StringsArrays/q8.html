@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr= [{food:"Raddis", price:4000}, {food:"IceCream", price:4000}, {food:"Tomato", price:4000}]
+            for(let i in arr){
+                if(i==1){
+                    document.write(`The Food Iteam Name is ${arr[i].food}`)
+                }
+            }
+               
+        }
+    </script>
+</body>
+</html>

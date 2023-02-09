@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+        </br>
+          <input id="user_input" type="text" label="Enter the Number">
+        </div>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let myself = document.getElementById("user_input").value;
+            let name = "Harsh";
+            console.log(myself[1])
+            console.log(myself.indexOf(name))
+            console.log(myself.substr(myself.indexOf(name), myself.indexOf(name)+name.length))
+            console.log(myself.includes(name))
+        }
+    </script>
+</body>
+</html>

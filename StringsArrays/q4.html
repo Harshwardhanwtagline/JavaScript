@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let str = "Apple,Mango,Banana,Kiwi"
+            const arr = str.split(",");
+            for(let i in arr){
+                if(arr[i]=="Kiwi"){
+                    arr[i]="Grapes"
+                }
+            }
+            console.log(arr.join(","))
+
+            if(str.includes("Mango")){
+                console.log(str.indexOf("Mango"))
+            }
+            console.log(arr[1])
+            
+            
+        }
+    </script>
+</body>
+</html>

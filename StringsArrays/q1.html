@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+        </br>
+          <input id="user_input" type="text" label="Enter the Number">
+        </div>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let n = document.getElementById("user_input").value;
+            document.write(n.toUpperCase() + "</br>")
+            document.write(n.toLowerCase())
+        }
+    </script>
+</body>
+</html>
