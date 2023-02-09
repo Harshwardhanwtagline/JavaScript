@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="text">
+                <p id="test">The Test is On </p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        
+        function myfunct(){
+            let odd_no = 11, even_no = 4;
+            const arr = new Array(1,2,3,4,5,6);
+                if(arr.includes(odd_no)!=true){
+                    arr.push(odd_no);
+                }
+                if(arr.includes(even_no)){
+                    console.log(true)
+                    arr.splice(arr.indexOf(even_no), 1)
+                }
+            console.log(arr)
+        }
+    </script>
+</body>
+</html>

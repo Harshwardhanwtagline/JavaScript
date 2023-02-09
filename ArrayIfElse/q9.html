@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="number">
+                <p id="test">Guess the number</p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let number = document.getElementById("user_input").value;
+            if(number>=7 || number<=3){
+                document.write("You’re far from the correct number")
+            }else if(number==4 || number==6){
+                document.write("You’re very closer to the correct number")
+            }else if(number=5){
+                document.write("You Won The Game")
+            }
+        }
+    </script>
+</body>
+</html>

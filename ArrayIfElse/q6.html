@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="text">
+                <p id="test">The Test is On </p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let x = 2, y = 3, z = 1;
+            var f = "";
+            if(x<y && x<z){
+                f+=x + " ";
+            if(y<z && z>x){
+                f+=y+ " " + z;    
+            }else if(z<y && y>x){
+                f+=z+" " +y;
+            }
+            }else if(y<x && y<z){
+            f+=y + " ";
+            if(x<z&&z>y){
+                f+=x+ " " +z;
+            }else if(z<x&&x>y){
+                f+=z+ " "+x;
+            }
+            }else if(z<x&&x<y){
+            f+=z + " ";
+            if(x<y&&y>z){
+                f+=x+ " "+ y    
+            }else if(y<x&&x>z)
+                f+=y+" "+z
+        }
+        console.log(f)
+        }
+
+    </script>
+</body>
+</html>

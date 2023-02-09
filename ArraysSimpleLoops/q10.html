@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let n = document.getElementById("user_input").value;
+            const arr = [[1, 2], [3, 4], [5, 6]];
+            let result = "";
+            for(let i of arr){
+                for(let j of i){
+                    result += j + " "
+                }
+            }
+            console.log(result)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr_1 = [10, 20, 30, 40, 50], arr_2 = ["Mango", "Apple", "Grapes", "Orange","Kiwi"], arr_3 = [10, "Ram", [2, 4, 5], 10.20];
+            arr_1.push(arr_2[1])
+            for(let i of arr_3){
+                if(Array.isArray(i)){
+                    document.write(i[i.indexOf(4)])
+                }
+            }
+            for(let i in arr_1){
+                let temp = "";
+                if(i==3-1){
+                    temp += arr_1[i]
+                }
+                if(Array.isArray(arr_3[i])){
+                    temp += arr_3[i][arr_3[i].indexOf(5)]
+                }
+                document.write("</br>" +temp)
+            }
+            const arr = arr_1.concat(arr_2, arr_3);
+            if(Array.isArray(arr)){
+                document.write("Its an Array")
+            }
+        }
+    </script>
+</body>
+</html>

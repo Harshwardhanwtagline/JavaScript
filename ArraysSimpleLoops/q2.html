@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr = ["Apple", "Banana", "Mango", "Kiwi"]
+            for(let i of arr){
+                if(i=="Mango"){
+                    arr[arr.indexOf("Mango")] = "Grapes"
+                }
+            }
+            console.log(arr)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="text">
+                <p id="test">The Test is On </p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+            function myfunct(){
+                var n = document.getElementById("user_input").value;
+                if(n==="green"|| n==="Green" || n==="GREEN"){
+                    
+                    document.write(`<img id="image_user" src="green.png" alt="Sign" weight="100px" height="100px">`)
+                }else if(n==="yellow"|| n==="Yello" || n==="YELLOW"){
+                    document.write(`<img id="image_user" src="yellow.png" alt="Sign" weight="100px" height="100px">`)
+                }else if(n==="red"|| n==="Red" || n==="RED"){
+                    document.write(`<img id="image_user" src="red.png" alt="Sign" weight="100px" height="100px">`)
+                }
+        }
+
+    </script>
+</body>
+</html>

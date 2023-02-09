@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+        </br>
+          <input id="user_input" type="number" label="Enter the Number">
+        </div>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let n = document.getElementById("user_input").value;
+            var arr = new Array();
+            for(let i =1;i<=n;i++){
+                arr.push(Math.floor(Math.random()*100));
+            }
+            for(let j of arr){
+                if(j%2==0){
+                    console.log(j)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

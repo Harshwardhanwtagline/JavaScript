@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="number">
+                <p id="test">The Test is On </p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let num = document.getElementById("user_input").value;
+            if(num>=85 && num<=100){
+                document.write("Grade-A");
+            }else if(num>=65 && num<85){
+                document.write("Grade-B")
+            }else if(num>=50 && num<65){
+                document.write("Grade-C")
+            }else if(num>=35 && num<50){
+                document.write("Grade-D")
+            }else{
+                document.write("Fail")
+            }
+        }
+    </script>
+</body>
+</html>

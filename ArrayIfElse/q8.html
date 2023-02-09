@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            </br>
+                <input name="user" id="user_input" type="number">
+                <p id="test">The Test is On </p>
+        </div>
+        <p id="output"></p>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let age = document.getElementById("user_input").value;
+            if(age>=18){
+                document.write("You Can Vote")
+            }else{
+                document.write("You are children, go and watch POGO!")
+            }
+        }
+    </script>
+</body>
+</html>

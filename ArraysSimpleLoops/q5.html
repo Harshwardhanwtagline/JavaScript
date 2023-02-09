@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let n = document.getElementById("user_input").value;
+            var details = [{name:"Harsh", age:20, department:"cse"}, {name:"Meet", age:22, department:"IT"}, {name:"Harry", age:20, department:"IC"}];
+            for(let i in details){
+                document.write(`My name is ${details[i].name} & my age is ${details[i].age} & my department is ${details[i].department} </br>`)
+            }
+        }
+    </script>
+</body>
+</html>
