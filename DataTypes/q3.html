@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+           const work_hr = [{day:"Monday", hr:8}, {day:"Tuesday", hr:2}, {day:"Wednesday", hr:8.5}, {day:"Thursday", hr:8}, {day:"Friday", hr:9}]
+           let total =  work_hr.reduce((total_hr, acc_hr) => acc_hr.hr + total_hr, 0)
+           document.write("I worked for " + total + " hours")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+Q1:
+
+  let length = 20; // Data type of length = Number
+  let name = “Ram” // Data type of name = String
+  let obj = { name: “Ram”, age: 99999,} // Data type of obj = Object
+
+
+Q6:
+   The function I use to check the data type of variable is typeof.
+   example:
+       let n  = 5;
+       console.write(typeof n)
+
+
+Q7:
+   The difference between == and === is that,
+   == check the content of variable and if the content given variables are equal then it will give "True".
+   === check the content of variable else well the type of variable also.
+   example:
+          let n =  3;
+          let n_1 = "3";
+          console.log(n == n_1) ==> output: True
+          console.log(n === n_1) ==> output: False
+
+
+Q8:
+   a. let result = ‘6’ – 2;
+          conole.log(result); 
+          Answer: 4
+
+   b. let result = ‘6’ * ‘2’; 
+          console.log(result); 
+          Answer: 12
+
+   c. let result = ‘hello’ – ‘ram’; 
+          console.log(result); 
+          Answer: undefine
+
+   d. let result = 5 – true; 
+          console.log(result); 
+          Answer: undefine
+
+Q9:
+   The difference between undefine and null is,
+     1. undefine is a type and null is object.
+     2. Undefine means The variable is declared but no value is assigned to it.
+     3. Null means is an assignment where you can assign to variable. 
