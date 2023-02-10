@@ -12,15 +12,18 @@
     <script>
         function myfunct(){
             const arr = ["apple", "Mango", "grapes", "kiWI", "bAnaNa", "pineapple", "ORAnge", "Strawberry", "cheRRY"]
-            const result_arr = arr.map(myfunction);
-            function myfunction(value, index, array){
-                if(index%2==0){
-                    return value.toUpperCase()
-                }else{
-                    return value.toLowerCase()
-                }
+            const result = new Array();
+            let temp = "";
+            for(let i =0;i<fruits.length;i++){
+               if(i%2==0){
+                temp = fruits[i];
+                result.push(temp.toUpperCase())
+               }else{
+                temp = fruits[i];
+                result.push(temp.toLowerCase())
+               }
             }
-            console.log(result_arr)
+            document.write(result)
         }
     </script>
 </body>

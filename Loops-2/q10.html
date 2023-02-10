@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let arr = [{name: "Person 1", pizza: 2}, {name: "Person 2", pizza: 1}, {name: "Person 3", pizza: 4}, {name: "Person 4", pizza: 2}]
+            var temp = 0;
+            for(let i of arr){
+                document.write(`${i.name} has eats total ${i.pizza} pizzas </br>`)
+            }
+            for(let i  of arr){
+                if(temp<i.pizza){
+                    temp = i.pizza
+                }
+            }
+            const obj = arr.find(obj => obj.pizza == temp)
+            document.write(`${obj.name} has eats maximum pizzas i.e. ${obj.pizza} pizzas`)
+        }
+    </script>
+</body>
+</html>

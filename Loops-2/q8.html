@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+        </br>
+          <input id="user_input" type="number" label="Enter the Number">
+        </div>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            let n = document.getElementById("user_input").value;
+            const arr = new Array();
+            var temp = new Array();
+            document.write("Pattern: </br>")
+            for(let i=1;i<=n;i++){
+                for(let j =1;j<=i;j++){
+                    temp.push(j)
+                    document.write(j + " ")
+                }
+                arr.push(temp.reduce((ele,temp) => ele+temp))
+                temp.length = 0
+                document.write("</br>")
+            }
+            document.write("Sum: </br>")
+            for(let j of arr){
+                document.write(j + "</br>")
+            }
+        }
+    </script>
+</body>
+</html>

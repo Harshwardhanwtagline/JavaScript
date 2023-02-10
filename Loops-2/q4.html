@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        </br>
+        <button id= "button1" onclick="myfunct()" type="button" >Click Me!</button>
+    </br>
+    </form>
+    <script>
+        function myfunct(){
+            const arr = ["apple", "mom", "level", "kiWI", "bAnaNa", "pineapple", "dad", "peep"]
+            var temp = "";
+            for(let i of arr){
+                if(i.length > 3){
+                    for(let j=i.length-1;j>=0;j--){
+                        temp +=i[j]
+                    }
+                    if(temp == i){
+                        document.write(`Given string ${i} is palindrome </br>`)
+                    }else{
+                        document.write(`Given string ${i} is ${i.length} character long </br>`)
+                    }
+                    temp.length = 0;
+                }else{
+                    document.write(`Given string ${i} is ${i.length} character long </br>`)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
