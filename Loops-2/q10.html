@@ -15,11 +15,9 @@
             var temp = 0;
             for(let i of arr){
                 document.write(`${i.name} has eats total ${i.pizza} pizzas </br>`)
-            }
-            for(let i  of arr){
                 if(temp<i.pizza){
                     temp = i.pizza
-                }
+                }         
             }
             const obj = arr.find(obj => obj.pizza == temp)
             document.write(`${obj.name} has eats maximum pizzas i.e. ${obj.pizza} pizzas`)
